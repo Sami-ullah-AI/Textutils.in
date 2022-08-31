@@ -72,7 +72,7 @@ def analyze(request):
 
         params = {'purpose': "Extraspace Remover", 'analyzed_text': analyzed}
         # Analyze the text
-    
+
     if (removepunc != "on" and extraspaceremover != "on" and newlineremover != "on" and fullcaps != "on" ):
         return HttpResponse("Mzy na khen")
         #return render(request, "analyzer.html", params)
@@ -88,6 +88,8 @@ def analyze(request):
     #return  HttpResponse("Here we will analyze your text")
 def aboutus(request):
     return render(request,'aboutus.html')
+def contactus(request):
+    return render(request,'contactus.html')
   #  return  HttpResponse("Cutter")
 #def space(request):
   #  return  HttpResponse("space")

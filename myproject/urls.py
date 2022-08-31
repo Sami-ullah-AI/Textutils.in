@@ -16,20 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
-#urlpatterns = [
-  #  path('admin/', admin.site.urls),
-  #  path('',views.index,name='index'),
-  #  path('about',views.about,name='about'),
-   # path('Home',views.Home,name='home')
-#]
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
     path('analyze',views.analyze,name='analyze'),
     path('about us',views.aboutus,name='about us'),
-  #  path('home',views.home,name='home'),
-  #  path('remover',views.remover,name='remover'),
-   # path('space',views.space,name='space'),
-   # path('cutter',views.cutter,name='cutter'),
-   # path('back',views.back,name='back')
+    path('contact us',views.contactus,name='contact us'),
+
 ]
